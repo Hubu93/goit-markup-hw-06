@@ -43,6 +43,14 @@ img {
   margin-top: 16px;
 }
 
+.footer-container-right .social-list {
+  margin-top: 20px;
+}
+
+.footer-input-list {
+  display: flex;
+}
+
 .social-list-link {
   height: 44px;
   width: 44px;
@@ -660,7 +668,7 @@ body {
 
 .footer-container-right {
   padding: 10px 0 40px 0;
-  margin-right: 93px;
+  margin-right: 100px;
 }
 
 .footer-container-righ-title {
@@ -691,6 +699,7 @@ body {
   line-height: 1.17;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 /* ********************** MODAL WINDOW ******************** */
 
@@ -734,6 +743,7 @@ body {
   cursor: pointer;
   border-radius: 50%;
   padding: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover {
@@ -764,6 +774,8 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
@@ -797,6 +809,7 @@ body {
 
 .modal-form-checkbox {
   display: inline-block;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checkbox-policy {
@@ -838,6 +851,7 @@ body {
   margin-top: 6px;
   resize: none;
   padding: 12px 16px 12px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-message::placeholder {
@@ -855,9 +869,76 @@ body {
   margin-top: 6px;
 }
 
+.footer-input-string {
+  padding: 10px 0 10px 0;
+}
+
 .modal-form-input-icon:nth-child(3) {
   width: 15px;
   height: 12px;
+}
+
+.footer-input-email-subscribe {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 360px;
+  height: 50px;
+  padding: 15px 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input-email-subscribe::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.footer-input-email-subscribe:focus {
+  border: 1px solid var(--accent-hover-color);
+  outline: none;
+}
+
+.footer-input-list-item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.footer-input-list-item-btn {
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--accent-hover-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  padding: 10px 62px 10px 29px;
+  border-radius: 4px;
+  height: 50px;
+  width: 200px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input-list-item-btn::before {
+  position: absolute;
+  content: '';
+  height: 24px;
+  width: 24px;
+  background-image: url('../images/svg/icon-send.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}
+
+.footer-input-list-item-btn:hover {
+  cursor: pointer;
+  background-color: rgb(29, 149, 204, 0.8);
+}
+
+.footer-input-list-item {
+  position: relative;
 }
 
 .modal-form-btn {
